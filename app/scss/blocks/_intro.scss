@@ -1,0 +1,75 @@
+.intro {
+    padding: 45px 0px;
+    background-color: $grey-light;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    &-content {
+        color: $black;
+        width: 100%;
+
+        &__title {
+            font-size: 36px;
+            font-weight: 700;
+
+            span {
+                display: block;
+                font-size: 24px;
+                font-weight: 400;
+                margin-top: 8px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__subtitle {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    &__img {
+        margin-right: 70px;
+    }
+
+    &-form {
+        max-width: 550px;
+        width: 100%;
+        height: 58px;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-top: 15px;
+        position: relative;
+        transition: all 0.4s;
+
+        &__input {
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            font-weight: 400;
+            color: $black;
+            padding-left: 17px;
+            padding-right: 50px;
+        }
+
+        &:focus-within {
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.16);
+        }
+
+        &__icon {
+            position: absolute;
+            right: 17px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    }
+}
