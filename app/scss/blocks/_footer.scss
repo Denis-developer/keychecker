@@ -26,5 +26,8 @@
                 text-decoration: none;
             }
         }
+        &:last-child {
+            font-size: 13px;
+        }
     }
 }

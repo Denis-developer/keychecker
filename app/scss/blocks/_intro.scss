@@ -26,11 +26,6 @@
                 margin-bottom: 20px;
             }
         }
-
-        &__subtitle {
-            font-size: 16px;
-            font-weight: 400;
-        }
     }
 
     &__img {
@@ -48,12 +43,13 @@
         transition: all 0.4s;
 
         &__input {
+            font-family: 'Montserrat', sans-serif;
             height: 100%;
             width: 100%;
             background-color: #fff;
             border: none;
             outline: none;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 400;
             color: $black;
             padding-left: 17px;

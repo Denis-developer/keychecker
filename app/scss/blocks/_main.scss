@@ -76,10 +76,6 @@
             font-weight: 600;
         }
 
-        &__text {
-            line-height: 150%;
-        }
-
         &__logo {
             width: 126px;
             text-align: center;
@@ -169,12 +165,6 @@
         img {
             transition: all 0.4s;
         }
-    }
-
-    &-accordion {
-        max-height: 0px;
-        overflow: hidden;
-        transition: all 0.4s;
     }
 
     &-list {
