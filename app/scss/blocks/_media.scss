@@ -8,7 +8,7 @@
 
 @media (max-width: 992px) {
 
-    .main {
+    main {
         padding-bottom: 45px;
     }
 
@@ -30,6 +30,7 @@
 
     .service {
         margin: 0;
+
         &__filter {
             display: block;
         }
@@ -54,11 +55,15 @@
         }
     }
 
-    // .main {
-    //     .container {
-    //         flex-direction: column;
-    //     }
-    // }
+    .reviews {
+        &-service {
+            margin-left: 20px;
+        }
+
+        &-block {
+            padding-right: 30px;
+        }
+    }
 }
 
 @media (max-width: 800px) {
@@ -126,15 +131,19 @@
             }
         }
     }
-    .footer{
+
+    .footer {
         &-top {
             flex-direction: column;
             margin: 0;
+
             .logo {
                 margin-bottom: 20px;
             }
+
             .nav {
                 flex-wrap: wrap;
+
                 &__link {
                     margin: 0px 10px;
                     margin-bottom: 10px;
@@ -142,12 +151,36 @@
             }
         }
     }
+
+    .reviews {
+        &-block {
+            padding: 20px;
+        }
+
+        &-user {
+            margin-left: 0;
+            margin-bottom: 15px;
+        }
+
+        &-service {
+            margin-top: 0;
+        }
+    }
 }
 
 @media (max-width: 576px) {
-    .main {
+    .title {
+        font-size: 30px;
+    }
+
+    .select {
+        width: 55%;
+    }
+
+    main {
         padding-top: 35px;
     }
+
     .container {
         padding: 0px 10px;
     }
@@ -178,6 +211,7 @@
             }
         }
     }
+
     .service {
         &__filter {
             margin: 0;
@@ -186,23 +220,47 @@
             top: 50%;
             transform: translateY(-50%);
         }
+
         &__tabs {
             flex-wrap: wrap;
             position: relative;
             padding-right: 15px;
             align-items: center;
         }
+
         &__tab {
             margin: 10px 0px;
             margin-right: 20px;
         }
+
         &-block {
             padding: 10px;
             padding-top: 15px;
         }
     }
+
     .options {
         padding: 15px;
         padding-top: 25px;
+    }
+
+    .reviews {
+        &-service {
+            flex-direction: row;
+            margin-left: 0;
+            margin-bottom: 25px;
+            margin-top: 20px;
+            text-align: left;
+
+            &__logo {
+                margin-right: 20px;
+            }
+
+            &__name {
+                h3 {
+                    margin: 0;
+                }
+            }
+        }
     }
 }

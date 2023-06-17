@@ -155,40 +155,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     select();
 
-    // Dynamic Adaptive
-    const parent_original = document.querySelectorAll('.reviews-block'),
-        parent = document.querySelectorAll('.reviews__content'),
-        item = document.querySelectorAll('.reviews-service');
-
-    const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-
-    if (viewport_width <= 576) {
-        if (!item[0].classList.contains('done')) {
-            for (let i = 0; i < parent.length; i++) {
-                parent[i].insertBefore(item[i], parent[i].children[1]);
-                item[i].classList.add('done');
-            }
-        }
-    }
-
-    window.addEventListener('resize', function (event) {
-        const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-        if (viewport_width <= 576) {
-            if (!item[0].classList.contains('done')) {
-                for (let i = 0; i < parent.length; i++) {
-                    parent[i].insertBefore(item[i], parent[i].children[1]);
-                    item[i].classList.add('done');
-                }
-            }
-        }
-        else {
-            if (item[0].classList.contains('done')) {
-                for (let i = 0; i < parent.length; i++) {
-                    parent_original[i].insertBefore(item[i], parent_original[i].children[1]);
-                    item[i].classList.remove('done');
-                }
-            }
-        }
-    });
-
 })
