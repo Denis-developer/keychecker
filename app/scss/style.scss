@@ -105,6 +105,38 @@ main {
     }
 }
 
+.input {
+    font-family: 'Montserrat', sans-serif;
+    background: #FFFFFF;
+    border: 1px solid #BABABA;
+    border-radius: 4px;
+    height: 54px;
+    outline: none;
+    margin-top: 6px;
+    font-size: 16px;
+    padding: 0px 17px;
+    width: 100%;
+
+    &.error {
+        border-color: #DF5656;
+    }
+
+    &.success {
+        border-color: #BABABA;
+    }
+
+    &:focus {
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.textarea {
+    min-height: 157px;
+    resize: none;
+    padding-top: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 @import "blocks/header";
 @import "blocks/hamburger";
 @import "blocks/intro";
@@ -112,5 +144,6 @@ main {
 @import "blocks/select";
 @import "blocks/reviews";
 @import "blocks/about";
+@import "blocks/addReview";
 @import "blocks/footer";
 @import "blocks/media";

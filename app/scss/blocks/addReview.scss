@@ -1,0 +1,75 @@
+.addReview {
+    &-rating {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+
+        label {
+            margin-right: 13px;
+            flex-shrink: 0;
+        }
+
+        svg {
+            margin-right: 5px;
+        }
+    }
+
+    &-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 26px;
+        column-gap: 20px;
+        width: 100%;
+        max-width: 910px;
+
+        &__btn {
+            width: fit-content;
+        }
+
+        .select {
+            max-width: none;
+            margin: 0;
+            margin-top: 6px;
+
+            &-header {
+                height: 54px;
+                border: 1px solid #BABABA;
+            }
+
+            &-body {
+                border-color: #BABABA;
+
+                &__item {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+
+        &__label {
+            span {
+                color: #DF5656;
+            }
+        }
+
+        &__wrapper {
+            grid-column: 1 / 3;
+
+            &:nth-child(1) {
+                grid-column: 1 / 2;
+            }
+
+            &:nth-child(2) {
+                grid-column: 2 / 3;
+            }
+
+            &:nth-child(3) {
+                grid-column: 1 / 2;
+            }
+
+            &:nth-child(4) {
+                grid-column: 2 / 3;
+            }
+        }
+    }
+}
