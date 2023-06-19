@@ -15,15 +15,14 @@
         width: 100%;
 
         &__title {
-            font-size: 36px;
-            font-weight: 700;
+            margin-bottom: 15px;
 
             span {
                 display: block;
                 font-size: 24px;
                 font-weight: 400;
-                margin-top: 8px;
-                margin-bottom: 20px;
+                margin-top: 3px;
+                margin-bottom: 0px;
             }
         }
     }

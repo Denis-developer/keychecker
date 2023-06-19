@@ -9,12 +9,13 @@
     &-accordion {
         border: 1px solid #E6E6E6;
         border-radius: 4px;
-        padding: 16px 18px 16px 14px;
+        // padding: 16px 18px 16px 14px;
         max-width: 910px;
-        width: 100%;
+        width: 99%;
         margin-top: 20px;
 
         &__title {
+            padding: 16px 18px 16px 14px;
             font-weight: 600;
             display: flex;
             justify-content: space-between;
@@ -26,6 +27,10 @@
                 transition: all 0.3s;
                 margin-left: 20px;
             }
+        }
+
+        &__text {
+            padding: 0px 14px;
         }
 
     }

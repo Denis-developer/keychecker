@@ -12,6 +12,12 @@
         cursor: pointer;
         align-items: center;
         padding: 10px 12px 10px 14px;
+        &.error {
+            border-color: #df5656 !important;
+        }
+        &.success {
+            border-color: #ddd;
+        }
 
         &__icon {
             display: flex;

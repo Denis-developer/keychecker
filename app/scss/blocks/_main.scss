@@ -5,8 +5,9 @@
     }
 }
 
-.service {
+.catalog {
     margin-right: 30px;
+    overflow: hidden;
 
     &__filter {
         margin-left: auto;
@@ -18,23 +19,31 @@
 
     &__content {
         text-align: center;
-        display: none;
-        transition: all 0.5s;
-        &.active {
-            display: block;
-        }
     }
 
     &__tabs {
+        margin-bottom: 24px;
         display: flex;
         align-items: center;
-        margin-bottom: 24px;
+        column-gap: 20px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+        }
     }
 
     &__tab {
         color: $black;
         margin-right: 35px;
         cursor: pointer;
+        flex-shrink: 0;
 
         &.active {
             color: $blue;
@@ -86,20 +95,6 @@
         }
     }
 
-    &-rating {
-        display: flex;
-        margin-top: 8px;
-
-        &__star {
-            margin-right: 2px;
-        }
-
-        &__count {
-            margin-left: 6px;
-            font-size: 14px;
-        }
-    }
-
     &__btn {
         display: inline-block;
         margin: 0 auto;
@@ -107,7 +102,7 @@
 }
 
 .options {
-    padding-top: 64px;
+    padding-top: 45px;
     width: 300px;
     flex-shrink: 0;
     position: relative;
@@ -209,7 +204,7 @@
 
             &:checked {
                 &+.options-list__label::before {
-                    background: $blue url(../img/main-page/check-icon.svg) no-repeat center center;
+                    background: $blue url(../img/icons/check-icon_2.svg) no-repeat center center;
                     border-color: $blue;
                 }
             }
