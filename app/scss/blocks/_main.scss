@@ -64,12 +64,16 @@
         }
 
 
-        &__name {
-            font-weight: 700;
-            color: $black;
+        &__wrapper {   
             margin-left: 14px;
             margin-top: -2px;
             line-height: 110%;
+        }
+
+        &__name {
+            font-weight: 700;
+            color: $black;
+            text-decoration: none;
         }
 
         &__link {
@@ -88,6 +92,7 @@
         &__logo {
             width: 126px;
             text-align: center;
+            flex-shrink: 0;
 
             img {
                 max-width: 100%;

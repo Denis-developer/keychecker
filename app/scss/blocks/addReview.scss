@@ -43,6 +43,20 @@
             width: fit-content;
         }
 
+        &__text {
+            grid-column: 1 / 3;
+            color: #777;
+
+            a {
+                text-decoration: none;
+                color: $blue;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
         .select {
             max-width: none;
             margin: 0;

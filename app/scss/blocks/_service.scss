@@ -211,16 +211,17 @@
         }
 
         &__data {
-            color: #999;
             display: flex;
             align-items: center;
             flex-wrap: wrap;
             row-gap: 10px;
 
-            span {
+            span, a {
                 display: flex;
                 align-items: center;
                 margin-right: 34px;
+                text-decoration: none;
+                color: #999;
 
                 img {
                     margin-right: 6px;
