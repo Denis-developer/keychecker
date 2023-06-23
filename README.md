@@ -1,4 +1,4 @@
-# Сервисы и программы для проверки позиций сайта
+# Services and programs for checking site positions
 
 [Multipage site](https://denis-developer.github.io/keychecker/).
 
